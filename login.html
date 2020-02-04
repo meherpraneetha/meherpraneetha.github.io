@@ -1,0 +1,304 @@
+<html>
+<head>
+<style>
+input[type=submit] {
+    width: 30em;  height: 3em;
+}
+
+.bg {
+  
+  background-image: url("/static/12.jpg");
+
+ 
+  height: 100%; 
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  height: 125px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#category").change(function () {
+            if ($(this).val() == "ART") {
+                $("#dv1").show();
+            } else {
+                $("#dv1").hide();
+            }
+            
+            if ($(this).val() == "BEAUTY") {
+                $("#dv2").show();
+            } else {
+                $("#dv2").hide();
+            }
+            
+            if ($(this).val() == "BOOKS") {
+                $("#dv3").show();
+            } else {
+                $("#dv3").hide();
+            }
+            
+            if ($(this).val() == "BUSINESS") {
+                $("#dv4").show();
+            } else {
+                $("#dv4").hide();
+            }
+            
+            if ($(this).val() == "COMMUNICATION") {
+                $("#dv5").show();
+            } else {
+                $("#dv5").hide();
+            }
+            
+            if ($(this).val() == "DATING") {
+                $("#dv6").show();
+            } else {
+                $("#dv6").hide();
+            }
+            
+            if ($(this).val() == "EDUCATION") {
+                $("#dv7").show();
+            } else {
+                $("#dv7").hide();
+            }
+            
+            if ($(this).val() == "ENTERTAINMENT") {
+                $("#dv8").show();
+            } else {
+                $("#dv8").hide();
+            }
+            
+            if ($(this).val() == "FOOD") {
+                $("#dv9").show();
+            } else {
+                $("#dv9").hide();
+            }
+            
+            if ($(this).val() == "GAMES") {
+                $("#dv10").show();
+            } else {
+                $("#dv10").hide();
+            }
+        });
+    });
+</script>
+</head>
+ <body style="font-family:Arial; color:white" class="bg">
+<h1 style="color:white; font-family:Arial"><center>ANDROID APP RECOMMENDER<center></h1>
+   <form action = "http://localhost:5000/login" method = "post">
+<p style="font-size:30px">
+   <span>Select any category</span>
+
+<select id="category" style="color:black; font-family:Arial; font-size:15px">
+    <option disabled selected value> -- select an option -- </option>
+    <option value="BEAUTY">Beauty</option>
+    <option value="ART">Art</option>
+    <option value="BOOKS">Books and reference</option>
+    <option value="BUSINESS">Business</option>
+    <option value="COMMUNICATION">Communication</option>
+    <option value="DATING">Dating</option>
+    <option value="EDUCATION">Education</option>
+    <option value="ENTERTAINMENT">Entertainment</option>
+    <option value="FOOD">Food and Drink</option>
+    <option value="GAMES">Games</option>
+</select>
+<br />
+<br>
+<div id="dv1" style="display: none">
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Glitter Birthday Cake Coloring and Drawing"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="Drawing Desk Draw Paint Color Doodle & Sketch Pad"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Logo Maker - Logo Creator, Generator & Designer"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Paint Free - Drawing Fun"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv2" style="display: none">
+ beauty
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Beauty Camera - Selfie Camera"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="Face Beauty Makeup Camera"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Jewellery Photo Editor – Women & Girls Jewellery"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input  style="font-size:20px; font-family:Arial" type="submit" name="art1" value="YLG @Home – Salon Beauty Services at Home"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv3" style="display: none">
+ books
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Wikipedia"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="Dictionary"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Amazon Kindle"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Sweek. Free books and stories"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv4" style="display: none">
+ business
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Careem"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="ORGANIZE EVERYTHING"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Fiverr"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="IMC Mobile App "></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv5" style="display: none">
+ communication
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Gmail"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="WhatsApp Messenger"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="JusTalk - Free Video Calls and Fun Video Chat"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Truecaller: Caller ID, block robocalls & spam SMS"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv6" style="display: none">
+ dating
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="DateLove - Date Your Dream Girl"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="CamTalk: Local Indian. Live Video Dating App"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Match Master for Tinder"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Live Video Call, Video Chat Random Video Call 2020"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv7" style="display: none">
+ Education
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Cambly - English Teacher"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="EduChat"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="IBPS, SSC, Railway RRB: Mock Tests & Exam Prep App"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Chegg Study - Homework Help"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv8" style="display: none">
+ Entertainment
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="Amazon Prime Video"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="TV Show Tracker - Trakt client"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="FilmOn Live TV & RECORD"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Doodle Art: Magic Drawing App"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv9" style="display: none">
+ Food and Drink
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="FAASOS - Order Food Online"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="Healthie.in - Healthy Food Delivery"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="FreshZone"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Uber Eats: Order Food Delivery"></input></center></p>
+  </div>
+</div>
+</div>
+
+<div id="dv10" style="display: none">
+ Games
+ <div class="row">
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name = "art1" value="2407 Racing"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name ="art1" value="Football Strike - Multiplayer Soccer"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Typing Master - Word Typing Game , Word Game"></input></center></p>
+  </div>
+  <div class="column">
+  <p><center><input style="font-size:20px; font-family:Arial" type="submit" name="art1" value="Real Racing  3"></input></center></p>
+  </div>
+</div>
+</div>
+
+</p>
+      </form>
+   </body>
+</html>

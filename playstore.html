@@ -1,0 +1,127 @@
+<html>
+<head>
+<style>
+.bg {
+  
+  background-image: url("/static/12.jpg");
+
+ 
+  height: 100%; 
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    
+</script>
+</head>
+
+ <body style="background-color:#eee;" class="bg">
+   <form action = "http://localhost:5000/playstore" method = "post">
+ 
+ <h1 style="color:white; font-family:Arial"><center>PREDICTING SUCCESS OF AN ANDROID APPLICATION<center></h1>
+ <span style="color:white; font-family:Arial">
+ <b>All fields are mandatory</b>
+ </span>
+ <p style="font-size:25px; color:white; font-family:Arial">
+  
+    Select the category of your application: 
+       <select name="category">
+    <option disabled selected value> -- select an option -- </option>
+    <option value="ART_AND_DESIGN">ART_AND_DESIGN</option>
+    <option value="BEAUTY">BEAUTY</option>
+    <option value="DATING"> DATING</option>
+    <option value="BUSINESS">BUSINESS</option>
+    <option value="Auto & vehicles">Auto & vehicles</option>
+    <option value="EDUCATION">EDUCATION</option>
+    <option value="FOOD_AND_DRINK">FOOD_AND_DRINK</option>
+    <option value="FINANCE">FINANCE</option>
+    <option value="BOOKS_AND_REFERENCE">BOOKS_AND_REFERENCE</option>
+    <option value="TOOLS">TOOLS</option>
+    <option value="COMMUNICATION">COMMUNICATION</option>
+    <option value="SOCIAL">SOCIAL</option>
+    <option value="PRODUCTIVITY">PRODUCTIVITY</option>
+    <option value="NEWS_AND_MAGAZINES">NEWS_AND_MAGAZINES</option>
+    <option value="MEDICAL">MEDICAL</option>
+    <option value="MUSIC_AND_AUDIO">MUSIC_AND_AUDIO</option>
+    <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+    <option value="HEALTH_AND_FITNESS">HEALTH_AND_FITNESS</option>
+    <option value="GAME_ACTION">GAME_ACTION</option>
+    <option value="GAME_CASUAL">GAME_CASUAL</option>
+    <option value="GAME_BOARD">GAME_BOARD</option>
+    <option value="GAME_RACING">GAME_RACING</option>
+    <option value="GAME_EDUCATIONAL">GAME_EDUCATIONAL</option>
+    <option value="GAME_PUZZLE">GAME_PUZZLE</option>
+    <option value="GAME_STRATEGY">STRATEGY</option>
+    <option value="GAME_SPORTS">GAME_SPORTS</option>
+    <option value="GAME_WORD">GAME_WORD</option>
+    <option value="PHOTOGRAPHY">PHOTOGRAPHY</option>
+    <option value="PERSONALIZATION">PERSONALIZATION</option>
+    <option value="LIFESTYLE">LIFESTYLE</option>
+    <option value="TRAVEL_AND_LOCAL">TRAVEL_AND_LOCAL</option>
+    <option value="SHOPPING">SHOPPING</option>
+    <option value="SPORTS">SPORTS</option>
+    <option value="WEATHER">WEATHER</option>
+    <option value="VIDEO_PLAYERS">VIDEO_PLAYERS</option>
+    
+</select><br>
+<br>
+    Enter the rating of your application: <input type="text" name="rating"></input>
+<br>
+<br>
+    Enter the no. of reviews: <input type="text" name="reviews"></input>
+<br>
+<br>
+Select the time elapsed after the last update:
+   <select name="time">
+    <option disabled selected value> -- select an option -- </option>
+    <option value="1 month">1 month</option>
+    <option value="3 months">3 months</option>
+    <option value="6 months">6 months</option>
+    <option value="more than 6 months">more than 6 months</option>
+   </select>
+<br>
+<br>
+Select the size of your app:
+   <select name="size">
+    <option disabled selected value> -- select an option -- </option>
+    <option value="less than 10">less than 10mb</option>
+    <option value="betweeen 10-20">between 10mb to 20mb</option>
+    <option value="betweeen 20-30">betweeen 20mb-30mb</option>
+    <option value="betweeen 30-40">betweeen 30mb-40mb</option>
+    <option value="betweeen 40-50">betweeen 40mb-50mb</option>
+    <option value="above 50">above 50mb</option>
+   </select>
+
+<br>
+<br>
+Select the Required Android Version:
+   <select name="version">
+    <option disabled selected value> -- select an option -- </option>
+    <option value="above 4">above 4</option>
+    <option value="above 5">above 5</option>
+    <option value="above 6">above 6</option>
+   </select>
+<br><br>
+Select for whom your app is suitable for:
+   <select name="content">
+    <option disabled selected value> -- select an option -- </option>
+    <option value="Everyone">Everyone</option>
+    <option value="Teen">Teen</option>
+    <option value="Mature">Mature</option>
+   </select>
+<br>
+<br>
+Enter the no. of installations (in lakhs): <input type="text" name="installs"></input>
+<br>
+<br>
+<input style="font-size:20px; font-family:Arial" type="submit" name="submit" value="Submit"></input>
+</p>
+      </form>
+   </body>
+</html>
